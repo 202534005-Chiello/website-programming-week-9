@@ -5,9 +5,9 @@ if ($_SERVER["REQUEST_METHOD"] !== "GET") {
 }
 ?>
 
-<h2>Cari Universitas</h2>
+<h2>Form Pendaftaran</h2>
 
-<form action="form.php" method="GET">
+<form action="form.php" method="GET" >
     <label for="q">Nama Universitas:</label>
     <input
         type="text"
