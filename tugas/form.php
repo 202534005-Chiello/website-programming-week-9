@@ -1,3 +1,10 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] !== "GET") {
+    http_response_code(405);
+    exit("Method tidak diizinkan.");
+}
+?>
+
 <h2>Cari Universitas</h2>
 
 <form action="form.php" method="GET">
@@ -17,6 +24,7 @@
         <option value="Universitas Brawijaya">
         <option value="Universitas Diponegoro">
     </datalist>
+    <button type="submit">Cari</button>
 </form>
 
 <form action="process.php" method="post">
